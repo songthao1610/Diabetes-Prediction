@@ -15,6 +15,13 @@ The aim of the project is to construct a machine learning model that is able to 
 
 ### Collaborators: Thao Nguyen, Nhi Nguyen  
 ### References: 
-https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+Chen, P., & Pan, C. (2018, March 27). Diabetes classification model based on boosting algorithms - BMC Bioinformatics. BioMed Central. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2090-9#:~:text=Non%2Dparametric%20statistical%20testing%20is,operating%20characteristic%20curve%20reached%200.99.  
+ 
+Iparraguirre-Villanueva, O., Espinola-Linares, K., Flores Castañeda, R. O., & Cabanillas-Carbonell, M. (2023, July 15). Application of machine learning models for early detection and accurate classification of type 2 diabetes. Diagnostics (Basel, Switzerland). https://pmc.ncbi.nlm.nih.gov/articles/PMC10378239/#sec5-diagnostics-13-02383 
+James, G., Witten, D., Hastie, T., Tibshirani, R., & Taylor, J. (2023). An introduction to statistical learning: With applications in Python. Springer.  
+
+Learning, U. M. (2016, October 6). Pima Indians Diabetes Database. Kaggle. https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database  
+
+Shams, M. Y., Tarek, Z., & Elshewey, A. M. (2025, January 6). A novel RFE-GRU model for diabetes classification using Pima Indian Dataset. Nature News. https://www.nature.com/articles/s41598-024-82420-9#:~:text=Introducing%20a%20variety%20of%20machine,Histogram%20Gradient%20Boosting%20(HGB). 
  
 
