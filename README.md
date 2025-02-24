@@ -13,11 +13,15 @@ The aim of the project is to construct a machine learning model that is able to 
 - **Age**: Age of the individual (years)
 - **Outcome**: 1= has diabetes; 0= does not have diabetes
 
-### Collaborators: Thao Nguyen, Nhi Nguyen  
+### Collaborators: Thao Nguyen (coding), Nhi Nguyen (writing introduction, improvments and researching)  
+
+### Further Improvements:  Without the time constraints of meeting the project deadline, we would focus on obtaining a larger and more diverse dataset. This model could then be further improved by testing additional machine-learning algorithms and new ways of transforming or merging the current data into more useful variables. For example, we can create a new feature like age-to-BMI ratio because these two variables usually relate. This may help the model capture more representative patterns and improve its prediction accuracy.  
+
 ### References: 
 Chen, P., & Pan, C. (2018, March 27). Diabetes classification model based on boosting algorithms - BMC Bioinformatics. BioMed Central. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2090-9#:~:text=Non%2Dparametric%20statistical%20testing%20is,operating%20characteristic%20curve%20reached%200.99.  
  
-Iparraguirre-Villanueva, O., Espinola-Linares, K., Flores Castañeda, R. O., & Cabanillas-Carbonell, M. (2023, July 15). Application of machine learning models for early detection and accurate classification of type 2 diabetes. Diagnostics (Basel, Switzerland). https://pmc.ncbi.nlm.nih.gov/articles/PMC10378239/#sec5-diagnostics-13-02383 
+Iparraguirre-Villanueva, O., Espinola-Linares, K., Flores Castañeda, R. O., & Cabanillas-Carbonell, M. (2023, July 15). Application of machine learning models for early detection and accurate classification of type 2 diabetes. Diagnostics (Basel, Switzerland). https://pmc.ncbi.nlm.nih.gov/articles/PMC10378239/#sec5-diagnostics-13-02383  
+ 
 James, G., Witten, D., Hastie, T., Tibshirani, R., & Taylor, J. (2023). An introduction to statistical learning: With applications in Python. Springer.  
 
 Learning, U. M. (2016, October 6). Pima Indians Diabetes Database. Kaggle. https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database  
