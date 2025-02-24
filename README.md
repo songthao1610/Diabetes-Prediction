@@ -13,9 +13,12 @@ The aim of the project is to construct a machine learning model that is able to 
 - **Age**: Age of the individual (years)
 - **Outcome**: 1= has diabetes; 0= does not have diabetes
 
-### Collaborators: Thao Nguyen (coding), Nhi Nguyen (writing introduction, improvments and researching)  
+### Collaborators:  
+Thao Nguyen (coding), Nhi Nguyen (researching, writing introduction and improvments)  
 
-### Further Improvements:  Without the time constraints of meeting the project deadline, we would focus on obtaining a larger and more diverse dataset. This model could then be further improved by testing additional machine-learning algorithms and new ways of transforming or merging the current data into more useful variables. For example, we can create a new feature like age-to-BMI ratio because these two variables usually relate. This may help the model capture more representative patterns and improve its prediction accuracy.  
+### Further Improvements:  
+
+Without the time constraints of meeting the project deadline, we would focus on obtaining a larger and more diverse dataset. This model could then be further improved by testing additional machine-learning algorithms and new ways of transforming or merging the current data into more useful variables. For example, we can create a new feature like age-to-BMI ratio because these two variables usually relate. This may help the model capture more representative patterns and improve its prediction accuracy.  
 
 ### References: 
 Chen, P., & Pan, C. (2018, March 27). Diabetes classification model based on boosting algorithms - BMC Bioinformatics. BioMed Central. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2090-9#:~:text=Non%2Dparametric%20statistical%20testing%20is,operating%20characteristic%20curve%20reached%200.99.  
