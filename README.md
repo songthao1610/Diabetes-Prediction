@@ -1,8 +1,9 @@
 # Diabetes Prediction Model  
 The aim of the project is to construct a machine learning model that is able to predict whether an individual has diabetes or not based on certain health parameters. With the use of the Pima Indians Diabetes Database, the project aims to identify patterns and predict the likelihood of diabetes and thus help health professionals identify possibly at-risk individuals for early intervention.
-### Dataset: **Pima Indians Diabetes Database** on Kaggle   
+### Dataset:   
+**Pima Indians Diabetes Database** on Kaggle   
 ### Features of data:  
-- **Observations**: 6921 (769 x 9)  
+- **Observations**: 6921 (769 instances x 9 features)  
 - **Pregnancies**: The number of pregnancies the individual has had
 - **Glucose**: Plasma glucose concentration after 2 hours in an oral glucose tolerance test
 - **BloodPressure**: Diastolic blood pressure (mm Hg)
@@ -11,10 +12,13 @@ The aim of the project is to construct a machine learning model that is able to 
 - **BMI**: Body mass index (kg/m²)
 - **DiabetesPedigreeFunction**: A score that represents family history of diabetes
 - **Age**: Age of the individual (years)
-- **Outcome**: 1= has diabetes; 0= does not have diabetes
+- **Outcome**: 1= has diabetes; 0= does not have diabetes  
+
+### Introduction:  
+Early diagnosis is very important in managing diabetes, a chronic disease that causes serious health complications. Diabetes prediction has been made possible with machine learning (ML), but creating precise models remains very challenging because of the nature of the disease and the large differentials between patient profiles. Most machine learning (ML) algorithms, including K-Nearest Neighbors (K-NN), Random Forest, and boosting algorithms, have been tried to enhance prediction. There have been many research papers praising these methods, with some algorithms performing better than others on some datasets or in some situations. Model performance also relies heavily on feature selection and preprocessing, such as normalization of data and missing value handling.  
 
 ### Collaborators:  
-Thao Nguyen (coding), Nhi Nguyen (researching, writing introduction and improvments)  
+**Thao Nguyen** (coding), **Nhi Nguyen** (researching and writing information for readme file)  
 
 ### Further Improvements:  
 
