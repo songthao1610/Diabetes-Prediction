@@ -1,4 +1,19 @@
 # Diabetes Prediction Model  
+
+ files related to the Time Delivery Prediction project.
+
+- **README.md:** This file serves as the main documentation for the project, providing details on the business case, methodology, and findings.
+
+- **notebook.ipynb:** This Jupyter Notebook contains code for data exploration and presentation purposes.
+
+- **requirement.txt:** This file lists the project requirements and dependencies needed to run the code.
+
+## Installation
+
+To install the required dependencies, run the following command:
+
+```pip install -r requirements.txt```
+
 The aim of the project is to construct a machine learning model that is able to predict whether an individual has diabetes or not based on certain health parameters. With the use of the Pima Indians Diabetes Database, the project aims to identify patterns and predict the likelihood of diabetes and thus help health professionals identify possibly at-risk individuals for early intervention.
 ### Dataset:   
 **Pima Indians Diabetes Database** on Kaggle   
@@ -15,10 +30,49 @@ The aim of the project is to construct a machine learning model that is able to 
 - **Outcome**: 1= has diabetes; 0= does not have diabetes  
 
 ### Introduction:  
-Early diagnosis is very important in managing diabetes, a chronic disease that causes serious health complications. Diabetes prediction has been made possible with machine learning (ML), but creating precise models remains very challenging because of the nature of the disease and the large differentials between patient profiles. Most machine learning (ML) algorithms, including K-Nearest Neighbors (K-NN), Random Forest, and boosting algorithms, have been tried to enhance prediction. There have been many research papers praising these methods, with some algorithms performing better than others on some datasets or in some situations. Model performance also relies heavily on feature selection and preprocessing, such as normalization of data and missing value handling.  
+Early diagnosis is very important in managing diabetes, a chronic disease that causes serious health complications. Diabetes prediction has been made possible with machine learning (ML), but creating precise models remains very challenging because of the nature of the disease and the large differentials between patient profiles. Most machine learning (ML) algorithms, including K-Nearest Neighbors (K-NN), Random Forest, and boosting algorithms, have been tried to enhance prediction. There have been many research papers praising these methods, with some algorithms performing better than others on some datasets or in some situations. Model performance also relies heavily on feature selection and preprocessing, such as normalization of data and missing value handling. 
 
 ### Collaborators:  
 **Thao Nguyen** (coding), **Nhi Nguyen** (researching and writing information for readme file)  
+
+### Conclusion: 
+ 
+In this project, we implemented various machine learning techniques to analyze the dataset, optimize model performance, and identify meaningful clusters within the data. Our approach included hyperparameter optimization using Optuna, clustering with K-Means, and evaluating model performance through classification metrics and visualizations.
+
+Model Performance Evaluation with Optuna
+Using Optuna, we tuned hyperparameters for several classification models, including Random Forest, SVM, Logistic Regression, and XGBoost. Based on the evaluation metrics (Accuracy, Precision, Recall, F1-Score, and AUC), we found that XGBoost performed best for this dataset
+
+Clustering with K-Means
+We applied K-Means clustering and determined that three clusters (k=3) were the optimal choice, successfully grouping the data into meaningful segments. The characteristics of each cluster are as follows:
+
+Cluster 0 (Low-Risk Group)
+
+- Lowest Glucose (104.5) → Likely non-diabetic or low risk.
+- Lower BMI (29.54) → Mostly in the normal/overweight range.
+- Lowest Insulin (56.25) → Suggests better metabolic health.
+- Very Low Diabetes Incidence (Outcome = 0.07) → Only 7% have diabetes.
+- Younger Age Group → This cluster consists mostly of younger individuals.
+
+Cluster 1 (High-Risk Group)
+
+- Highest Glucose (149.5) → Strong indicator of diabetes.
+- Highest BMI (37.59) → Falls in the obese range, increasing risk.
+- Highest Insulin Levels (211.93) → Suggests insulin resistance.
+- Very High Diabetes Incidence (Outcome = 0.75) → 75% of individuals have diabetes.
+- Older Age Group → Aging population with higher risk factors.
+
+Cluster 2 (Intermediate Group)
+
+- Moderate Glucose (128.4) → Higher than Cluster 0 but lower than Cluster 1.
+- Moderate BMI (32.14) → Falls into the overweight/obese category.
+- Surprisingly Low Insulin (23.96) → Could indicate metabolic variations.
+- Moderate Diabetes Incidence (Outcome = 0.54) → 54% of individuals have diabetes.
+- Oldest Age Group → This cluster represents the oldest individuals.
+
+=> Cluster 1 has the highest diabetes risk, suggesting that interventions should target individuals with high glucose, high BMI, and insulin resistance.
+=> Cluster 0 appears to be the healthiest, with lower glucose, insulin, and BMI levels.
+
+*This project demonstrates the power of machine learning, clustering, and hyperparameter tuning in extracting valuable insights from healthcare-related data. Future work could involve feature engineering, deep learning models, or alternative clustering techniques (DBSCAN) to further refine predictions and segmentations.
 
 ### Further Improvements:  
 
