@@ -100,7 +100,7 @@ For the latter, We will implement algorithms such as:
 - Deep learning algorithms (lstm). This may need us to change the data because deep learning requires large number of observations 
 we will also try out GridSearchCV or RandomizedSearchCV to optimize hyperparameters instead of limiting to only Optuna.
 
-In addition, Our project currently lacks statistical testing to explore different feature relationships. Fr further analysis we will design Hypothesis Tests for Feature Relationships:
+3. In addition, Our project currently lacks statistical testing to explore different feature relationships. Fr further analysis we will design Hypothesis Tests for Feature Relationships:
 - We will work on testing hypotheses like: “Is high glucose always accompanied by high insulin levels?”; “Does age moderate the relationship between BMI and diabetes?”;
 - We will Use statistical tests like Pearson correlation, ANOVA for comparing groups.
 
