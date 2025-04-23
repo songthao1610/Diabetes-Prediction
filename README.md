@@ -80,7 +80,28 @@ Cluster 2 (Intermediate Group)
 
 ### Further Improvements:  
 
-Without the time constraints of meeting the project deadline, we would focus on obtaining a larger and more diverse dataset. This model could then be further improved by testing additional machine-learning algorithms and new ways of transforming or merging the current data into more useful variables. For example, we can create a new feature like age-to-BMI ratio because these two variables usually relate. This may help the model capture more representative patterns and improve its prediction accuracy.  
+1. Expand the Dataset for Generalizability
+The current dataset only includes 769 female individuals of Pima Indian heritage, which limits model generalization.
+Specific ways to improve it:
+- Find and merge additional diabetes-related datasets from different demographics (from the UCI Machine Learning Repository, we found one: https://archive.ics.uci.edu/dataset/34/diabetes).
+- If possible, we will try out with a completely different dataset that will represent the US population: https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
+- For the first case, we will use pandas to join datasets with consistent features.
+  
+2. Test More Machine Learning and Deep Learning Algorithms
+Currently, we only limited to 4 models. We can improve the prediction results by either improving the data preprocessing step or by choosing completely different modelling methods.
+For the former, we will spend time working again on:
+- Handle Missing and Zero-Like Values More Effectively: In the current dataset, 0 values in these columns likely represent missing or incorrectly recorded data, not true physiological zeros. We may need to work on that more closely. If the 0 is not the true data, but actually to indicate that value is missing, we will need to change those values to null values using np.nan(), and apply imputation methods that are going to work best for the dataset (median, mean,...)
+- Handle Outliers: In this project, we have used one method to handle outliers, but we believe there could be better ways to handle it. For future improvement, we will work on trying out different methods to effectively handle outliers or we possibly use log transform to transform variable to make it normalized.
+- Do further Feature Engineering because original features may not capture complex interactions.: we will create new features such as: age-to-BMI ratio, Glucose-to-Insulin index, Pregnancy rate (pregnancies divided by age), Binned Age Groups (e.g., 21–30, 31–40, etc.).
+
+For the latter, We will implement algorithms such as:
+- SVM with RBF kernel (for nonlinear classification)
+- Deep learning algorithms (lstm). This may need us to change the data because deep learning requires large number of observations 
+we will also try out GridSearchCV or RandomizedSearchCV to optimize hyperparameters instead of limiting to only Optuna.
+
+In addition, Our project currently lacks statistical testing to explore different feature relationships. Fr further analysis we will design Hypothesis Tests for Feature Relationships:
+- We will work on testing hypotheses like: “Is high glucose always accompanied by high insulin levels?”; “Does age moderate the relationship between BMI and diabetes?”;
+- We will Use statistical tests like Pearson correlation, ANOVA for comparing groups,
 
 ### References: 
 Chen, P., & Pan, C. (2018, March 27). Diabetes classification model based on boosting algorithms - BMC Bioinformatics. BioMed Central. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2090-9#:~:text=Non%2Dparametric%20statistical%20testing%20is,operating%20characteristic%20curve%20reached%200.99.  
