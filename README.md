@@ -17,6 +17,10 @@ To install the required dependencies, run the following command:
 The aim of the project is to construct a machine learning model that is able to predict whether an individual has diabetes or not based on certain health parameters. With the use of the Pima Indians Diabetes Database, the project aims to identify patterns and predict the likelihood of diabetes and thus help health professionals identify possibly at-risk individuals for early intervention.
 ### Dataset:   
 **Pima Indians Diabetes Database** on Kaggle   
+This dataset was initially provided by the National Institute of Diabetes and Digestive and Kidney Diseases. Its primary purpose is to aid in the diagnostic prediction of diabetes in patients, using various medical measurements included in the dataset. The data was curated with specific criteria: all individuals are female, at least 21 years old, and of Pima Indian descent.
+
+Link to access the data: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+
 ### Features of data:  
 - **Observations**: 6921 (769 instances x 9 features)  
 - **Pregnancies**: The number of pregnancies the individual has had
