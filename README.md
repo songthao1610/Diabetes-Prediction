@@ -15,7 +15,7 @@ To install the required dependencies, run the following command:
 ```pip install -r requirements.txt```
 
 The aim of the project is to construct a machine learning model that is able to predict whether an individual has diabetes or not based on certain health parameters. With the use of the Pima Indians Diabetes Database, the project aims to identify patterns and predict the likelihood of diabetes and thus help health professionals identify possibly at-risk individuals for early intervention.
-### Dataset:   
+
 **Pima Indians Diabetes Database** on Kaggle   
 This dataset was initially provided by the National Institute of Diabetes and Digestive and Kidney Diseases. Its primary purpose is to aid in the diagnostic prediction of diabetes in patients, using various medical measurements included in the dataset. The data was curated with specific criteria: all individuals are female, at least 21 years old, and of Pima Indian descent.
 
@@ -34,7 +34,10 @@ Link to access the data: https://www.kaggle.com/datasets/uciml/pima-indians-diab
 - **Outcome**: 1= has diabetes; 0= does not have diabetes  
 
 ### Introduction:  
-Early diagnosis is very important in managing diabetes, a chronic disease that causes serious health complications. Diabetes prediction has been made possible with machine learning (ML), but creating precise models remains very challenging because of the nature of the disease and the large differentials between patient profiles. Most machine learning (ML) algorithms, including K-Nearest Neighbors (K-NN), Random Forest, and boosting algorithms, have been tried to enhance prediction. There have been many research papers praising these methods, with some algorithms performing better than others on some datasets or in some situations. Model performance also relies heavily on feature selection and preprocessing, such as normalization of data and missing value handling. 
+Early diagnosis is very important in managing diabetes, a chronic disease that causes serious health complications. Diabetes prediction has been made possible with machine learning (ML), but creating precise models remains very challenging because of the nature of the disease and the large differentials between patient profiles. Most machine learning (ML) algorithms, including K-Nearest Neighbors (K-NN), Random Forest, and boosting algorithms, have been tried to enhance prediction. There have been many research papers praising these methods, with some algorithms performing better than others on some datasets or in some situations. There are different works with ML for diabetes detection that used the Pima Indian dataset. For example, in [1], The study utilized the Pima Indians Diabetes Dataset, consisting of 768 patients with 9 features, and experimented with data balancing techniques like SMOTE and dimensionality reduction using PCA. The best-performing models were K-NN and BNB, achieving accuracies of 79.6% and 77.2%, respectively, when trained on SMOTE-augmented data. However, performance significantly dropped when PCA was applied, indicating potential limitations in feature reduction for this task. The study relied on traditional evaluation metrics (accuracy, precision, recall, F1-score) and concluded that K-NN and BNB were the most effective models, though with only marginal differences in performan
+
+
+
 
 ### Collaborators:  
 **Thao Nguyen** (coding), **Nhi Nguyen** (researching and writing information for readme file)  
@@ -105,14 +108,12 @@ we will also try out GridSearchCV or RandomizedSearchCV to optimize hyperparamet
 - We will Use statistical tests like Pearson correlation, ANOVA for comparing groups.
 
 ### References: 
-Chen, P., & Pan, C. (2018, March 27). Diabetes classification model based on boosting algorithms - BMC Bioinformatics. BioMed Central. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2090-9#:~:text=Non%2Dparametric%20statistical%20testing%20is,operating%20characteristic%20curve%20reached%200.99.  
+1. Iparraguirre-Villanueva, O., Espinola-Linares, K., Flores Castañeda, R. O., & Cabanillas-Carbonell, M. (2023, July 15). Application of machine learning models for early detection and accurate classification of type 2 diabetes. Diagnostics (Basel, Switzerland). https://pmc.ncbi.nlm.nih.gov/articles/PMC10378239/#sec5-diagnostics-13-02383  
  
-Iparraguirre-Villanueva, O., Espinola-Linares, K., Flores Castañeda, R. O., & Cabanillas-Carbonell, M. (2023, July 15). Application of machine learning models for early detection and accurate classification of type 2 diabetes. Diagnostics (Basel, Switzerland). https://pmc.ncbi.nlm.nih.gov/articles/PMC10378239/#sec5-diagnostics-13-02383  
- 
-James, G., Witten, D., Hastie, T., Tibshirani, R., & Taylor, J. (2023). An introduction to statistical learning: With applications in Python. Springer.  
+2. James, G., Witten, D., Hastie, T., Tibshirani, R., & Taylor, J. (2023). An introduction to statistical learning: With applications in Python. Springer.  
 
-Learning, U. M. (2016, October 6). Pima Indians Diabetes Database. Kaggle. https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database  
+3. Learning, U. M. (2016, October 6). Pima Indians Diabetes Database. Kaggle. https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database  
 
-Shams, M. Y., Tarek, Z., & Elshewey, A. M. (2025, January 6). A novel RFE-GRU model for diabetes classification using Pima Indian Dataset. Nature News. https://www.nature.com/articles/s41598-024-82420-9#:~:text=Introducing%20a%20variety%20of%20machine,Histogram%20Gradient%20Boosting%20(HGB). 
+4. Shams, M. Y., Tarek, Z., & Elshewey, A. M. (2025, January 6). A novel RFE-GRU model for diabetes classification using Pima Indian Dataset. Nature News. https://www.nature.com/articles/s41598-024-82420-9#:~:text=Introducing%20a%20variety%20of%20machine,Histogram%20Gradient%20Boosting%20(HGB). 
  
 
