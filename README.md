@@ -89,6 +89,7 @@ Specific ways to improve it:
   
 2. Test More Machine Learning and Deep Learning Algorithms
 Currently, we only limited to 4 models. We can improve the prediction results by either improving the data preprocessing step or by choosing completely different modelling methods.
+
 For the former, we will spend time working again on:
 - Handle Missing and Zero-Like Values More Effectively: In the current dataset, 0 values in these columns likely represent missing or incorrectly recorded data, not true physiological zeros. We may need to work on that more closely. If the 0 is not the true data, but actually to indicate that value is missing, we will need to change those values to null values using np.nan(), and apply imputation methods that are going to work best for the dataset (median, mean,...)
 - Handle Outliers: In this project, we have used one method to handle outliers, but we believe there could be better ways to handle it. For future improvement, we will work on trying out different methods to effectively handle outliers or we possibly use log transform to transform variable to make it normalized.
