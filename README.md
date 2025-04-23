@@ -101,7 +101,7 @@ we will also try out GridSearchCV or RandomizedSearchCV to optimize hyperparamet
 
 In addition, Our project currently lacks statistical testing to explore different feature relationships. Fr further analysis we will design Hypothesis Tests for Feature Relationships:
 - We will work on testing hypotheses like: “Is high glucose always accompanied by high insulin levels?”; “Does age moderate the relationship between BMI and diabetes?”;
-- We will Use statistical tests like Pearson correlation, ANOVA for comparing groups,
+- We will Use statistical tests like Pearson correlation, ANOVA for comparing groups.
 
 ### References: 
 Chen, P., & Pan, C. (2018, March 27). Diabetes classification model based on boosting algorithms - BMC Bioinformatics. BioMed Central. https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2090-9#:~:text=Non%2Dparametric%20statistical%20testing%20is,operating%20characteristic%20curve%20reached%200.99.  
